@@ -4,9 +4,9 @@
 def q1
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
-  names.push("斎藤")
+  names<<("斎藤")
 
-  puts names
+  p names
 
 end
 
@@ -14,9 +14,9 @@ def q2
   array1 = ["dog", "cat", "fish"]
   array2 = ["bird", "bat", "tiger"]
 
-  array1.push(array2)
-  array1.flatten!
-  p array1
+  array3 = array1+array2
+  
+  p array3
 
 end
 
@@ -46,8 +46,15 @@ end
 
 def q6
   numbers1 = [1, 2, 3, 4, 5]
+  numbers2 = []
 
-  # 以下に回答を記載
+  numbers1.each do |i|   
+    number = i*10
+    numbers2.push(number)
+    
+  end
+  
+  p numbers2
 
 end
 
