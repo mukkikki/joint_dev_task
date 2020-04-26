@@ -47,9 +47,8 @@ end
 def q6
   numbers1 = [1, 2, 3, 4, 5]
 
-  numbers2 = numbers1.map do |i|   
-    number = i*10  
-  end
+  numbers2 = numbers1.map {|i|number = i*10  }    
+  
   
   p numbers2
 
@@ -98,8 +97,8 @@ end
 def q11
   sports = ["サッカー", "バスケ", "野球", ["フットサル", "野球"], "水泳", "ハンドボール", ["卓球", "サッカー", "ボルダリング"]]
 
-  sports.flatten!.uniq! .each_with_index do |sport,i|
-  puts "No#{i+1} #{sport}"
+  sports.flatten!.uniq!.each.with_index(1) do |sport,i|
+  puts "No#{i} #{sport}"
 
   end
 
