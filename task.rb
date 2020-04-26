@@ -47,7 +47,7 @@ end
 def q6
   numbers1 = [1, 2, 3, 4, 5]
 
-  numbers2 = numbers1.map {|i|number = i*10  }    
+  numbers2 = numbers1.map {|i| i*10  }    
   
   
   p numbers2
@@ -79,7 +79,7 @@ end
 def q9
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
-  names.each_with_index do |name,i|
+  names.each.with_index(1) do |name,i|
     puts "会員NO.#{i+1} #{name}さん"
   end
 
